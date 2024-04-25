@@ -1,10 +1,9 @@
-x = int(input("Введите первое число "))
-y = int(input("Введите второе число "))
-result = 0
-z = 0
-while z != (abs(y)):
-   result = result+(abs(x))
-   z=z+1
-if (x<0 and y>0) or (x>0 or x<y):
-  result = -result
-print(result)
+#Напишите программу, которая получает два целых числа и находит их произведение, не используя операцию умножения. Учтите, что числа могут быть отрицательными.  
+a = int(input("Введите первое число "))
+b = int(input("Введите второе число "))
+c = 0
+for i in range(1, abs(b)+1 ):
+    c = c + abs(a)
+if (a<0 and b>0) or (a>0 and b<0):
+  c = -c
+print(c)
